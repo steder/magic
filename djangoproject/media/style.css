@@ -1,0 +1,90 @@
+body {
+    background-color: #F5F5FF;
+}
+div#login {
+    /* text-align: center; */
+    width: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clear { /* generic container (i.e. div) for floating buttons */
+    overflow: hidden;
+    width: 100%;
+}
+
+a.button {
+    background: transparent url('bg_button_a.gif') no-repeat scroll top right;
+    color: #444;
+    display: block;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    height: 24px;
+    margin-right: 6px;
+    padding-right: 18px; /* sliding doors padding */
+    text-decoration: none;
+}
+
+a.button span {
+    background: transparent url('bg_button_span.gif') no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 5px 0 5px 18px;
+}
+
+a.button:active {
+    background-position: bottom right;
+    color: #000;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
+a.button:active span {
+    background-position: bottom left;
+    padding: 6px 0 4px 18px; /* push text down 1px */
+}
+
+/* a.button{
+    border: 1px solid;
+    padding: 2px;
+    text-decoration: none;
+}*/
+/* a:link, a:visited, a:hover, a:active */
+/*a:link.button {
+    color: black;
+}
+a:visited.button {
+    color: black;
+}
+a:hover.button {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+a:active.button{
+    border: 1px solid;
+}*/
+p.intro {
+    font-family: Lucida;
+    font-style: italic;
+    text-align: center;
+}
+p#intro {
+	font-family: fantasy;
+	font-style: italic;
+	/* font-variant: small-caps; */
+	font-weight: bold;
+	font-size: 100px;
+	line-height: 100%;
+	word-spacing: normal;
+	letter-spacing: normal;
+	text-decoration: none;
+	/* text-transform: uppercase; */
+	text-align: center;
+	text-indent: 0ex;
+}
+fieldset {
+    border: none;
+}
+label {
+    padding: 4px;
+}

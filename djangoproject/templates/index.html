@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Penzilla Crushes Magic - Login{% endblock %}
+{% block headerJavascript %}
+<script type="text/javascript">
+$(document).ready(function () {
+	$("#loginForm").hide();
+	$("#showLoginButton").click(function(event){
+		event.preventDefault();
+		$("#loginForm").show("slow");
+		$("#showLoginButton").hide("slow");
+	});
+});
+</script>
+{% endblock %}
+{% block content %}
+<p id="intro">Hello, Magic!</p>
+{% if user.is_authenticated %}
+	<p class="intro">Welcome, {{user.username}}</p>
+{% else %}
+	<div id="login">	
+		<a id="showLoginButton" class="button" href="#"><span>Login</span></a><p>
+		<form id="loginForm">
+		<fieldset>
+			<p><span><label>Username:</label><input></input></span></p>
+			<p><span><label>Password:</label><input></input></span></p>
+			<a class="button" href="#"><span>Login</span></a>
+		</fieldset>
+		</form>
+	</div>
+{% endif %}
+{% endblock %}
